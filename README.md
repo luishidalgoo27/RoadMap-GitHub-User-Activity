@@ -2,6 +2,10 @@
 
 Este es un proyecto de línea de comandos desarrollado con **PHP** que permite obtener y mostrar la actividad reciente de un usuario de GitHub directamente desde la terminal.
 
+## 🔗 Enlace al reto original
+
+👉 [Github User Activity en roadmap.sh](https://roadmap.sh/projects/github-user-activity)
+
 ## 🧠 Descripción
 
 Esta aplicación CLI acepta un nombre de usuario de GitHub como argumento, consulta la API de GitHub para obtener su actividad reciente y la muestra de forma legible por consola. Es una excelente práctica para trabajar con APIs, manipular datos JSON y crear interfaces de línea de comandos.
