@@ -1,11 +1,6 @@
 <?php
 
-namespace App\Services;
-
-class CallApiService
-{
-
-    public function eventsUser(string $name)
+function eventsUser(string $name)
     {
         $url = "https://api.github.com/users/$name/events?per_page=10";
         $petition = curl_init($url);
@@ -75,5 +70,24 @@ class CallApiService
         }
     }
 
-}
+    global $argc, $argv;
+
+    if ($argc < 2)
+    {
+        echo "Use: \n";
+        echo "php CallApi.php github-activity <username>\n";
+    }
+
+    $comando = $argv[1];
+
+    switch($comando)
+    {
+        case 'github-activity':
+            if(!isset($argv[2])){
+                echo "❌ The username is required.\n";
+                exit(1);
+            }
+            eventsUser($argv[2]);
+            break;
+    }
 ?>

@@ -1,6 +1,6 @@
 # GitHub Activity CLI
 
-Este es un proyecto de línea de comandos desarrollado con **Laravel** y **PHP** que permite obtener y mostrar la actividad reciente de un usuario de GitHub directamente desde la terminal.
+Este es un proyecto de línea de comandos desarrollado con **PHP** que permite obtener y mostrar la actividad reciente de un usuario de GitHub directamente desde la terminal.
 
 ## 🧠 Descripción
 
@@ -11,13 +11,13 @@ Esta aplicación CLI acepta un nombre de usuario de GitHub como argumento, consu
 Ejecuta el comando desde tu terminal:
 
 ```bash
-php artisan github-activity <username>
+php CallApi.php github-activity <username>
 ```
 
 Por ejemplo:
 
 ```bash
-php artisan github-activity luishidalgoo27
+php CallApi.php github-activity luishidalgoo27
 ```
 
 ### 💡 Resultado esperado
@@ -55,13 +55,4 @@ php artisan github-activity luishidalgoo27
 - No utiliza librerías externas para hacer peticiones HTTP (usa `file_get_contents` o `cURL` nativo).
 - La actividad se obtiene en tiempo real, sin caché.
 
-## ✨ Ideas para mejoras
 
-- Filtrar por tipo de evento (issues, push, etc).
-- Mejorar el formato de salida (por ejemplo, usar colores).
-- Implementar sistema de caché para evitar llamadas repetidas.
-- Mostrar detalles adicionales de cada evento.
-
-## 📄 Licencia
-
-Este proyecto está bajo la licencia [MIT](LICENSE).
